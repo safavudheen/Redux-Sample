@@ -1,7 +1,15 @@
+import { useSelector } from "react-redux";
+
 function Footer() {
-  return (
+  
+
+
+const color = useSelector(state => state.color.value)
+
+return (
     <div className="footer">
-      <p>My Redux project footer</p>
+      <p style={{color}}>My Redux project footer</p>
+      <h1>hey</h1>
     </div>
   );
 }
